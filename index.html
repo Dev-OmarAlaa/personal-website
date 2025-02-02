@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Omar Alaa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Jomhuria&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- video loop -->
+        <video class="video__loop" autoplay loop muted>
+            <source src="video-loop.mp4" type="video/mp4" />
+        </video>
+        <!-- header component -->
+        <header class="header">
+            <label for="menu" class="burger-menu">
+                <div class="burger-menu__bar"></div>
+                <div class="burger-menu__bar"></div>
+                <div class="burger-menu__bar"></div>
+            </label>
+            <input id="menu" class="burger-menu__checkbox" type="checkbox">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li>
+                        <a class="navigation__link navigation__bio" href="#bio">Bio</a>
+                    </li>
+                    <li>
+                        <a class="navigation__link navigation__skills" href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="navigation__link navigation__contact" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="toggle">
+                <h3 class="toggle__title">Switch Theme</h3>
+                <input id="toggle" class="toggle__checkbox" type="checkbox">
+                <label class="toggle__label" for="toggle"></label>
+            </div>
+        </header>
+        <!-- bio component -->
+        <section class="bio section" id="bio">
+            <div class="bio__data">
+                <h1 class="bio__heading">Hi There, I’M A Passionate Software Engineer</h1>
+                <p class="bio__objective">My name is <span class="bio__name">Omar Alaa</span>, a trainee at <a
+                        class="bio__almdrasa" href="https://almdrasa.com/">Almdrasa.com</a>, Software Engineer and a
+                    content creator who publish content on <a class="bio__facebook"
+                        href="https://www.facebook.com/omaralaaalsayd?mibextid=ZbWKwL">Facebook</a> and <a
+                        class="bio__linkedin"
+                        href="https://www.linkedin.com/in/omar-alaa-109aa42a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>.
+                </p>
+                <a href="#contact" class="bio__say-hi-link">Say Hi <span class="bio__down--arrow">↓</span></a>
+            </div>
+            <div class="bio__pic--content">
+                <img class="bio__pic" src="bio__pic.jpg" alt="picture of omar alaa">
+            </div>
+        </section>
+        <!-- skills component -->
+        <section id="skills" class="skills section skills__width--bg">
+            <h2 class="h2__heading">Skills</h2>
+
+            <ul class="skills__list">
+                <li class="skills__item">
+                    <h2 class="skills__title">HTML</h2>
+                    <span class="skills__icon"></span>
+                </li>
+                <li class="skills__item">
+                    <h2 class="skills__title">CSS</h2>
+                    <span class="skills__icon"></span>
+                </li>
+                <li class="skills__item">
+                    <h2 class="skills__title">Responsive Design</h2>
+                    <span class="skills__icon"></span>
+                </li>
+                <li class="skills__item">
+                    <h2 class="skills__title">CSS Layout</h2>
+                    <span class="skills__icon"></span>
+                </li>
+                <li class="skills__item">
+                    <h2 class="skills__title">Python</h2>
+                    <span class="skills__icon"></span>
+                </li>
+                <li class="skills__item">
+                    <h2 class="skills__title">Git & Github</h2>
+                    <span class="skills__icon"></span>
+                </li>
+            </ul>
+        </section>
+        <!-- contact component -->
+        <section id="contact" class="section contact">
+            <div>
+                <p class="contact__description">
+                    Feel free to reach out to me any time. I prefer to talk over email, especially since we may be a few
+                    time
+                    zones away.
+                </p>
+
+                <a href="mailto: omaralaa251966@gmail.com" class="contact__email">omaralaa251966@gmail.com</a>
+
+                <div class="contact__socials">
+                    <a class="contact__social" href="https://www.facebook.com/omaralaaalsayd?mibextid=ZbWKwL">
+                        <img src="facebook.svg" alt="facebook" />
+                    </a>
+                    <a class="contact__social"
+                        href="https://www.linkedin.com/in/omar-alaa-109aa42a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                        <img src="LinkedIn.svg" alt="LinkedIn.svg" />
+                    </a>
+                    <a class="contact__social"
+                        href="https://github.com/Dev-OmarAlaa">
+                        <img src="github.svg" alt="Github.svg" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact__formContent">
+                <h2 class="h2__heading--effect">
+                    Let’s Work <br />
+                    Together!
+                </h2>
+                <form action="#">
+                    <div class="contact__inputs">
+                        <input type="text" class="contact__input" name="name" placeholder="Full Name" required />
+                        <input type="tel" class="contact__input" placeholder="Phone Number" name="tel" required
+                            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
+                    </div>
+                    <textarea class="contact__input contact__textarea" name="message" placeholder="Your Message"
+                        rows="1" required></textarea>
+                    <input type="submit" class="contact__button" value="Send Message" />
+                </form>
+            </div>
+        </section>
+        <!-- footer component -->
+        <footer class="footer">© 2025 by Omar Alaa</footer>
+    </div>
+</body>
+
+</html>

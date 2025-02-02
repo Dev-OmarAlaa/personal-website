@@ -304,6 +304,7 @@ a:hover::after {
 .bio__pic {
     width: 42.7rem;
     border-radius: 50%;
+    animation: pulse 1s infinite;
 }
 
 .skills__width--bg {

@@ -218,12 +218,12 @@ a:hover::after {
     font-size: var(--font-size-65);
     font-weight: var(--font-weight-bold);
     grid-column: 1 / -1;
-    margin-bottom: 8.7rem;
+    margin-bottom: 10.7rem;
     text-transform: uppercase;
 }
 
 .h2__heading--effect {
-    animation: pulse 1s infinite;
+    animation: pulse 2.5s infinite;
 }
 
 .h3-heading {
@@ -247,6 +247,7 @@ a:hover::after {
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-20);
     margin: 3rem 0 8rem;
+    line-height: 1.6;
 }
 
 .bio__name {
@@ -268,13 +269,10 @@ a:hover::after {
 .bio__say-hi-link {
     font-size: 2.4rem;
     font-weight: var(--font-weight-bold);
-}
-
-.bio__say-hi-link {
     padding: 0.7rem 4.7rem;
     background-color: var(--color-link-bg);
     color: var(--color-white);
-    animation: pulse 1s infinite;
+    animation: pulse 2.5s infinite;
 }
 
 
@@ -304,7 +302,7 @@ a:hover::after {
 .bio__pic {
     width: 42.7rem;
     border-radius: 50%;
-    animation: pulse 1s infinite;
+    animation: pulse 2.5s infinite;
 }
 
 .skills__width--bg {
@@ -429,6 +427,7 @@ html:has(.toggle__checkbox:checked) {
     box-shadow: 2.17543px 8.7017px 38.0699px var(--color-green);
 }
 
+
 @media (max-width: 1000px) {
     html {
         font-size: 8px;
@@ -529,6 +528,7 @@ html:has(.toggle__checkbox:checked) {
     }
 }
 
+/* ================ */
 input,
 textarea {
     color: green;
